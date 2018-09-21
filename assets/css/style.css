@@ -1,0 +1,44 @@
+body, html {
+    height: 100%;
+    font-family: "benguiatbold", Arial, Helvetica, sans-serif;
+    color: rgb(204, 4, 4);
+}
+.bg {
+    background-color: black;
+    background-size: 100%;
+}
+
+.red-background {
+    background-color: rgb(204, 4, 4);
+    color: white;
+    font-size: 15px;
+}
+
+#start-button {
+    color: black;
+    font-weight: bold;
+}
+.start-screen, .results,
+.question-screen {
+    box-sizing: border-box;
+    margin: 0 auto;
+    }
+div {
+    display: block;
+    text-align: center;
+
+}
+.form {
+    font-size: 15px;
+    display: block;
+}
+.radio-inline {
+    font-size: 15px;
+    margin-right: 8px;
+}
+hr {
+    color: white;
+    border-color: rgb(204, 4, 4);
+    margin: 5px;
+}
+

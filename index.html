@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/stylesheet.css" type="text/css" charset="utf-8" />
+
+  <title>Trivia Game</title>
+
+</head>
+
+<body>
+  <!-- sets background to css "bg" properties - black background -->
+  <div class="bg">
+    <!-- adds stranger trivia logo at top -->
+    <img id="stranger-things-logo" src="assets/images/stranger-trivia-cropped.png" class="img-fluid" alt="stranger-things-logo" />
+    <!-- classifies the opening screen with intro, instructions and start button -->
+    <!-- Uses bootstrap grid system - one row with three columns.  Images in outer columns and instructions/start button in center -->
+    <div class="start-screen row">
+      <div class="col-sm-3"></div>
+
+      <div class="col-sm-6" id="welcome">
+        <div id="title">
+          <p></p>
+          <p>welcome to</p>
+          <p>
+            <h3>STRANGER THINGS</h3>
+          </p>
+          <p>trivia!</p>
+        </div>
+        <h5>there are ELEVEN questions<p></p>
+          <p>you have 90 seconds</p>
+          <p>to answer them all...</p>
+          <p><em>with your MIND!</em></p>
+        </h5>
+        <p>
+          <button type="button" id="start-button" class="btn btn-lrg red-background">CLICK TO START</button>
+        </p>
+      </div>
+
+      <div class="col-sm-3"></div>
+
+    </div>
+    <!-- end of welcome page/instructions -->
+
+    <!-- start of question page with timer -->
+    <div class="row text-center">
+      <div class="col-sm-12 text-center">
+        <p></p>
+        <h3 id="time">Time Remaining: <span id="timer"></span></h3>
+      </div>
+    </div>
+
+    <!-- beginning of questions -->
+    <div class="question-screen">
+      <p>1. In what state does Stranger Things take place?</p>
+      <form class="question">
+        <label class="radio-inline">
+          <input type="radio" name="optradio" class="optradio" value="correct">Indiana
+        </label>
+        <label class="radio-inline">
+          <input type="radio" name="optradio" class="optradio" value="incorrect">Kansas
+        </label>
+        <label class="radio-inline">
+          <input type="radio" name="optradio" class="optradio" value="incorrect">Illinois
+        </label>
+        <label class="radio-inline">
+          <input type="radio" name="optradio" class="optradio" value="incorrect">Nebraska
+        </label>
+      </form>
+      <hr>
+
+      <p>2. Finish this quote: "She Can't Resist These _____?</p>
+      <form class="question">
+        <label class="radio-inline">
+          <input type="radio" name="optradio" class="optradio" value="incorrect">Jokes
+        </label>
+        <label class="radio-inline">
+          <input type="radio" name="optradio" class="optradio" value="correct">Pearls
+        </label>
+        <label class="radio-inline">
+          <input type="radio" name="optradio" class="optradio" value="incorrect">Curls
+        </label>
+        <label class="radio-inline">
+          <input type="radio" name="optradio" class="optradio" value="incorrect">Skills
+        </label>
+      </form>
+
+      <p>3. Which of these Sci-Fi/Fantasy movies does 'Stranger Things' pull from?</p>
+      <form class="question">
+        <label class="radio-inline">
+          <input type="radio" name="optradio" class="optradio" value="incorrect">SUPER8
+        </label>
+        <label class="radio-inline">
+          <input type="radio" name="optradio" class="optradio" value="incorrect">Star Wars
+        </label>
+        <label class="radio-inline">
+          <input type="radio" name="optradio" class="optradio" value="incorrect">E.T.
+        </label>
+        <label class="radio-inline">
+          <input type="radio" name="optradio" class="optradio" value="correct">All of Them
+        </label>
+      </form>
+
+      <p>4. What is the name of the game the boys play at the arcade in Season 2?</p>
+      <form class="question">
+        <label class="radio-inline">
+          <input type="radio" name="optradio" class="optradio" value="correct">Dig Dug
+        </label>
+        <label class="radio-inline">
+          <input type="radio" name="optradio" class="optradio" value="incorrect">Donkey Kong
+        </label>
+        <label class="radio-inline">
+          <input type="radio" name="optradio" class="optradio" value="incorrect">Pac-Man
+        </label>
+        <label class="radio-inline">
+          <input type="radio" name="optradio" class="optradio" value="incorrect">Tron
+        </label>
+      </form>
+
+      <p>5. How does Joyce communicate with Will in the upside down world?</p>
+      <form class="question">
+        <label class="radio-inline">
+          <input type="radio" name="optradio" class="optradio" value="incorrect">Painting on the Walls
+        </label>
+        <label class="radio-inline">
+          <input type="radio" name="optradio" class="optradio" value="incorrect">Sensory Deprivation
+        </label>
+        <label class="radio-inline">
+          <input type="radio" name="optradio" class="optradio" value="correct">Christmas Lights
+        </label>
+        <label class="radio-inline">
+          <input type="radio" name="optradio" class="optradio" value="incorrect">Mirrors
+        </label>
+      </form>
+
+      <p>6. What is Eleven's favorite food?</p>
+      <form class="question">
+        <label class="radio-inline">
+          <input type="radio" name="optradio" class="optradio" value="incorrect">Pop-Tarts
+        </label>
+        <label class="radio-inline">
+          <input type="radio" name="optradio" class="optradio" value="correct">Eggos
+        </label>
+        <label class="radio-inline">
+          <input type="radio" name="optradio" class="optradio" value="incorrect">Twinkies
+        </label>
+        <label class="radio-inline">
+          <input type="radio" name="optradio" class="optradio" value="incorrect">Cheese Pizza
+        </label>
+      </form>
+
+      <p>7. Where does the epic car chase scene occur in episode 1 of Season 2?</p>
+      <form class="question">
+        <label class="radio-inline">
+          <input type="radio" name="optradio" class="optradio" value="incorrect">New York City
+        </label>
+        <label class="radio-inline">
+          <input type="radio" name="optradio" class="optradio" value="incorrect">Chicago
+        </label>
+        <label class="radio-inline">
+          <input type="radio" name="optradio" class="optradio" value="incorrect">Hawkins
+        </label>
+        <label class="radio-inline">
+          <input type="radio" name="optradio" class="optradio" value="correct">Pittsburgh
+        </label>
+      </form>
+
+      <p>8. The rural back road Eleven and the boys often use as an escape route is called _______?</p>
+      <form class="question">
+        <label class="radio-inline">
+          <input type="radio" name="optradio" class="optradio" value="incorrect">Westwood
+        </label>
+        <label class="radio-inline">
+          <input type="radio" name="optradio" class="optradio" value="incorrect">Backwood
+        </label>
+        <label class="radio-inline">
+          <input type="radio" name="optradio" class="optradio" value="correct">Mirkwood
+        </label>
+        <label class="radio-inline">
+          <input type="radio" name="optradio" class="optradio" value="incorrect">Darkwood
+        </label>
+      </form>
+
+      <p>9. What do Barb's parents serve for dinner when Nancy and Steve visit?</p>
+      <form class="question">
+        <label class="radio-inline">
+          <input type="radio" name="optradio" class="optradio" value="incorrect">Popeyes Chicken
+        </label>
+        <label class="radio-inline">
+          <input type="radio" name="optradio" class="optradio" value="correct">Kentucky Fried Chicken
+        </label>
+        <label class="radio-inline">
+          <input type="radio" name="optradio" class="optradio" value="incorrect">Church's Chicken
+        </label>
+        <label class="radio-inline">
+          <input type="radio" name="optradio" class="optradio" value="incorrect">Homemade Fried Chicken
+        </label>
+      </form>
+
+      <p>10. In what year does Season 2 take place?</p>
+      <form class="question">
+        <label class="radio-inline">
+          <input type="radio" name="optradio" class="optradio" value="incorrect">1982
+        </label>
+        <label class="radio-inline">
+          <input type="radio" name="optradio" class="optradio" value="incorrect">1983
+        </label>
+        <label class="radio-inline">
+          <input type="radio" name="optradio" class="optradio" value="correct">1984
+        </label>
+        <label class="radio-inline">
+          <input type="radio" name="optradio" class="optradio" value="incorrect">1985
+        </label>
+      </form>
+
+      <p>11. Who does Dustin dance with at the Snow Ball?</p>
+      <form class="question">
+        <label class="radio-inline">
+          <input type="radio" name="optradio" class="optradio" value="incorrect">Lucas' Sister
+        </label>
+        <label class="radio-inline">
+          <input type="radio" name="optradio" class="optradio" value="correct">Nancy
+        </label>
+        <label class="radio-inline">
+          <input type="radio" name="optradio" class="optradio" value="incorrect">Eleven
+        </label>
+        <label class="radio-inline">
+          <input type="radio" name="optradio" class="optradio" value="incorrect">Max
+        </label>
+      </form>
+
+    </div>
+    <!-- 
+    <div class="submit"> -->
+    <div class="row results">
+      <div class="col-lg-4 col-lg-offset-4">
+        <button type="button" class="btn btn-lg red-background" id="submit-button">submit answers</button>
+      </div>
+    </div>
+    <!-- end of question screen -->
+
+    <!-- beginning of results screen -->
+    <!-- <div class="results">
+      <div id="correct">Correct Answers: </div>
+      <div id="incorrect">Incorrect Answers: </div>
+      <div id="unanswered">Unanswered: </div>
+    </div> -->
+    <!-- end of results screen -->
+    <div class="images row">
+      <div class="col-sm-4">
+        <img id="stranger-kids" src="assets/images/stranger-kids.jpg" class="img-fluid" alt="stranger-things-kids" />
+      </div>
+      <div class="col-sm-4">
+      </div>
+      <div class="col-sm-4">
+        <img id="stranger-pic" src="assets/images/demogorgon.jpg" class="img-fluid" alt="stranger pic" />
+      </div>
+
+    </div>
+  </div>
+
+  <!-- end of background div -->
+  </div>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="assets/javascript/app.js"></script>
+
+</body>
+
+</html>
