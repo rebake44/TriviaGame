@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
 
     //global variables
     var number = 90;
@@ -16,13 +16,13 @@ $(document).ready(function() {
     $(window).on("load", hide);
 
     //on click function to start game
-    $("#start-button").on("click", function() {
+    $("#start-button").on("click", function () {
         $("#welcome").hide();
         show();
         run();
     });
 
-    $("#submit-button").on("click", function() {
+    $("#submit-button").on("click", function () {
         $(".start-screen").hide();
         hide();
         stats();
@@ -31,7 +31,7 @@ $(document).ready(function() {
         console.log(this)
     });
 
-    $("#play-again-button").on("click", function() {
+    $("#play-again-button").on("click", function () {
         playAgain();
 
     });
@@ -46,7 +46,7 @@ $(document).ready(function() {
         var incorrectDisplay = $("<div id='incorrect'>").html("Incorrect Answers: " + incorrect);
         var unansweredDisplay = $("<div id='unanswered'>").html("Unanswered: " + unanswered[0]);
         //creating a column/place for the results display to go
-        var resultDisplay= $("<div class='results' id='results'>");
+        var resultDisplay = $("<div class='results' id='results'>");
         $("#results").show();
         $(".results").show();
         $("#play-again-button").show();
@@ -60,12 +60,12 @@ $(document).ready(function() {
         resultDisplay.append(correctDisplay);
         resultDisplay.append(incorrectDisplay);
         resultDisplay.append(unansweredDisplay);
-        //I have no idea what this is doing!  Displaying the results each on a row of their own??
+        //This creates a row after the 5th existing row in the HTML and displays all of the updated scores
         $(".row:nth(4)").append(resultDisplay);
     }
-        function decrement() {
-            //decrease the timer by one second
-            number--;
+    function decrement() {
+        //decrease the timer by one second
+        number--;
 
         //display the time in html dynamically
         $("#timer").html(" " + number + " seconds");
@@ -82,7 +82,7 @@ $(document).ready(function() {
             stop();
         }
     }
-    
+
     //function to stop the timer and clear everything out
     function stop() {
         clearInterval(intervalId);
@@ -114,16 +114,16 @@ $(document).ready(function() {
     }
 
     //retrieve the tallies of correct vs incorrect with an on change function
-    $("input[type=radio]").on("change", function() {
+    $("input[type=radio]").on("change", function () {
         correct = $("input[value=correct]:checked").length;
         incorrect = $("input[value=incorrect]:checked").length;
-        unanswered = $(11-(correct+incorrect));
+        unanswered = $(11 - (correct + incorrect));
 
         console.log(unanswered)
     });
 
 
-    });
+});
 
 
 
@@ -219,7 +219,7 @@ $(document).ready(function() {
 //     ]}
 
 //     var gameOver = "Game Over!";
-    
+
 //this initializes the button that starts the game//
 // $("startGame").on(click, function() {
 //     $(".question-screen").show();
