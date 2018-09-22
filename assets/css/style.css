@@ -15,10 +15,10 @@ body, html {
     font-size: 15px;
 }
 
-#start-button, #submit-button {
+#start-button, #submit-button, #play-again-button {
     color: black;
 }
-.start-screen, .results,
+.start-screen, .results, .play-again,
 .question-screen {
     box-sizing: border-box;
     margin: 0 auto;

@@ -30,6 +30,11 @@ $(document).ready(function() {
 
         console.log(this)
     });
+
+    $("#play-again-button").on("click", function() {
+        playAgain();
+
+    });
     //create the elements for the stats page now that there are numbers to be filled in (hence, the dynamic element creation)  This will be a function that creates elements
 
     function stats() {
@@ -44,6 +49,8 @@ $(document).ready(function() {
         var resultDisplay= $("<div class='results' id='results'>");
         $("#results").show();
         $(".results").show();
+        $("#play-again-button").show();
+
 
 
 
@@ -80,11 +87,22 @@ $(document).ready(function() {
         clearInterval(intervalId);
     }
 
+    function playAgain() {
+        location.reload();
+        // $("#play-again-button").hide();
+        // $("#results").hide();
+        // $(".results").hide();
+        // $(".start-screen").show();
+        // $("#welcome").show();
+
+    }
+
     //functions to hide various screens
     function hide() {
         $(".question-screen").hide();
         $("#time").hide();
         $("#submit-button").hide();
+        $("#play-again-button").hide();
         $("#results").show();
     }
     //function to show the appropriate screens
