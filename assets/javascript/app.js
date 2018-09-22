@@ -82,6 +82,7 @@ $(document).ready(function() {
             stop();
         }
     }
+    
     //function to stop the timer and clear everything out
     function stop() {
         clearInterval(intervalId);
