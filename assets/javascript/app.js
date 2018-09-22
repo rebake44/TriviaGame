@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
     //global variables
-    var number = 120;
+    var number = 90;
     var correct = 0;
     var incorrect = 0;
     var unanswered = 0;
@@ -34,7 +34,7 @@ $(document).ready(function() {
 
     function stats() {
         //create a heading / title with results
-        var gameOver = $("<h2>").html("how well do you know<p>your STRANGER THINGS trivia?");
+        var gameOver = $("<h2>").html("YOUR SCORE");
 
         // Display The statistics
         var correctDisplay = $("<div id='correct'>").html("Correct Answers: " + correct);
@@ -54,7 +54,7 @@ $(document).ready(function() {
         resultDisplay.append(incorrectDisplay);
         resultDisplay.append(unansweredDisplay);
         //I have no idea what this is doing!  Displaying the results each on a row of their own??
-        $(".row:nth(2)").append(resultDisplay);
+        $(".row:nth(4)").append(resultDisplay);
     }
         function decrement() {
             //decrease the timer by one second

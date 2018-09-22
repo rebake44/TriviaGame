@@ -22,9 +22,7 @@
     <!-- classifies the opening screen with intro, instructions and start button -->
     <!-- Uses bootstrap grid system - one row with three columns.  Images in outer columns and instructions/start button in center -->
     <div class="start-screen row">
-      <div class="col-sm-3"></div>
-
-      <div class="col-sm-6" id="welcome">
+      <div class="col-sm-12" id="welcome">
         <div id="title">
           <p></p>
           <p>welcome to</p>
@@ -42,9 +40,6 @@
           <button type="button" id="start-button" class="btn btn-lrg red-background">CLICK TO START</button>
         </p>
       </div>
-
-      <div class="col-sm-3"></div>
-
     </div>
     <!-- end of welcome page/instructions -->
 
@@ -58,215 +53,229 @@
 
     <!-- beginning of questions -->
     <div class="question-screen">
-      <p>1. In what state does Stranger Things take place?</p>
-      <form class="question">
-        <label class="radio-inline">
-          <input type="radio" name="optradio" class="optradio" value="correct">Indiana
-        </label>
-        <label class="radio-inline">
-          <input type="radio" name="optradio" class="optradio" value="incorrect">Kansas
-        </label>
-        <label class="radio-inline">
-          <input type="radio" name="optradio" class="optradio" value="incorrect">Illinois
-        </label>
-        <label class="radio-inline">
-          <input type="radio" name="optradio" class="optradio" value="incorrect">Nebraska
-        </label>
-      </form>
-      <hr>
+      <div class="row text-center">
+        <div class="col-sm-1">
+        </div>
+        <div class="col-sm-10">
+          <p></p>
+          <hr>
+          <p>1. In what state does Stranger Things take place?</p>
+          <form class="question">
+            <label class="radio-inline">
+              <input type="radio" name="optradio" class="optradio" value="correct">Indiana
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="optradio" class="optradio" value="incorrect">Kansas
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="optradio" class="optradio" value="incorrect">Illinois
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="optradio" class="optradio" value="incorrect">Nebraska
+            </label>
+          </form>
+          <hr>
 
-      <p>2. Finish this quote: "She Can't Resist These _____?</p>
-      <form class="question">
-        <label class="radio-inline">
-          <input type="radio" name="optradio" class="optradio" value="incorrect">Jokes
-        </label>
-        <label class="radio-inline">
-          <input type="radio" name="optradio" class="optradio" value="correct">Pearls
-        </label>
-        <label class="radio-inline">
-          <input type="radio" name="optradio" class="optradio" value="incorrect">Curls
-        </label>
-        <label class="radio-inline">
-          <input type="radio" name="optradio" class="optradio" value="incorrect">Skills
-        </label>
-      </form>
+          <p>2. Finish this quote: "She can't resist these _____?</p>
+          <form class="question">
+            <label class="radio-inline">
+              <input type="radio" name="optradio" class="optradio" value="incorrect">jokes
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="optradio" class="optradio" value="correct">pearls
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="optradio" class="optradio" value="incorrect">curls
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="optradio" class="optradio" value="incorrect">skills
+            </label>
+          </form>
+          <hr>
 
-      <p>3. Which of these Sci-Fi/Fantasy movies does 'Stranger Things' pull from?</p>
-      <form class="question">
-        <label class="radio-inline">
-          <input type="radio" name="optradio" class="optradio" value="incorrect">SUPER8
-        </label>
-        <label class="radio-inline">
-          <input type="radio" name="optradio" class="optradio" value="incorrect">Star Wars
-        </label>
-        <label class="radio-inline">
-          <input type="radio" name="optradio" class="optradio" value="incorrect">E.T.
-        </label>
-        <label class="radio-inline">
-          <input type="radio" name="optradio" class="optradio" value="correct">All of Them
-        </label>
-      </form>
+          <p>3. Which of these Sci-Fi/Fantasy movies does 'Stranger Things' pull from?</p>
+          <form class="question">
+            <label class="radio-inline">
+              <input type="radio" name="optradio" class="optradio" value="incorrect">SUPER8
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="optradio" class="optradio" value="incorrect">Star Wars
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="optradio" class="optradio" value="incorrect">E.T.
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="optradio" class="optradio" value="correct">all of them
+            </label>
+          </form>
+          <hr>
 
-      <p>4. What is the name of the game the boys play at the arcade in Season 2?</p>
-      <form class="question">
-        <label class="radio-inline">
-          <input type="radio" name="optradio" class="optradio" value="correct">Dig Dug
-        </label>
-        <label class="radio-inline">
-          <input type="radio" name="optradio" class="optradio" value="incorrect">Donkey Kong
-        </label>
-        <label class="radio-inline">
-          <input type="radio" name="optradio" class="optradio" value="incorrect">Pac-Man
-        </label>
-        <label class="radio-inline">
-          <input type="radio" name="optradio" class="optradio" value="incorrect">Tron
-        </label>
-      </form>
+          <p>4. What is the name of the game the boys play at the arcade in Season 2?</p>
+          <form class="question">
+            <label class="radio-inline">
+              <input type="radio" name="optradio" class="optradio" value="correct">Dig Dug
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="optradio" class="optradio" value="incorrect">Donkey Kong
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="optradio" class="optradio" value="incorrect">Pac-Man
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="optradio" class="optradio" value="incorrect">Tron
+            </label>
+          </form>
+          <hr>
 
-      <p>5. How does Joyce communicate with Will in the upside down world?</p>
-      <form class="question">
-        <label class="radio-inline">
-          <input type="radio" name="optradio" class="optradio" value="incorrect">Painting on the Walls
-        </label>
-        <label class="radio-inline">
-          <input type="radio" name="optradio" class="optradio" value="incorrect">Sensory Deprivation
-        </label>
-        <label class="radio-inline">
-          <input type="radio" name="optradio" class="optradio" value="correct">Christmas Lights
-        </label>
-        <label class="radio-inline">
-          <input type="radio" name="optradio" class="optradio" value="incorrect">Mirrors
-        </label>
-      </form>
+          <p>5. How does Joyce communicate with Will in the upside down world?</p>
+          <form class="question">
+            <label class="radio-inline">
+              <input type="radio" name="optradio" class="optradio" value="incorrect">painting on walls
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="optradio" class="optradio" value="incorrect">sensory deprivation
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="optradio" class="optradio" value="correct">Christmas lights
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="optradio" class="optradio" value="incorrect">mirrors
+            </label>
+          </form>
+          <hr>
 
-      <p>6. What is Eleven's favorite food?</p>
-      <form class="question">
-        <label class="radio-inline">
-          <input type="radio" name="optradio" class="optradio" value="incorrect">Pop-Tarts
-        </label>
-        <label class="radio-inline">
-          <input type="radio" name="optradio" class="optradio" value="correct">Eggos
-        </label>
-        <label class="radio-inline">
-          <input type="radio" name="optradio" class="optradio" value="incorrect">Twinkies
-        </label>
-        <label class="radio-inline">
-          <input type="radio" name="optradio" class="optradio" value="incorrect">Cheese Pizza
-        </label>
-      </form>
+          <p>6. What is Eleven's favorite food?</p>
+          <form class="question">
+            <label class="radio-inline">
+              <input type="radio" name="optradio" class="optradio" value="incorrect">Pop-Tarts
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="optradio" class="optradio" value="correct">Eggos
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="optradio" class="optradio" value="incorrect">Twinkies
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="optradio" class="optradio" value="incorrect">Cheese Pizza
+            </label>
+          </form>
+          <hr>
 
-      <p>7. Where does the epic car chase scene occur in episode 1 of Season 2?</p>
-      <form class="question">
-        <label class="radio-inline">
-          <input type="radio" name="optradio" class="optradio" value="incorrect">New York City
-        </label>
-        <label class="radio-inline">
-          <input type="radio" name="optradio" class="optradio" value="incorrect">Chicago
-        </label>
-        <label class="radio-inline">
-          <input type="radio" name="optradio" class="optradio" value="incorrect">Hawkins
-        </label>
-        <label class="radio-inline">
-          <input type="radio" name="optradio" class="optradio" value="correct">Pittsburgh
-        </label>
-      </form>
+          <p>7. Where does the epic car chase scene occur in episode 1 of Season 2?</p>
+          <form class="question">
+            <label class="radio-inline">
+              <input type="radio" name="optradio" class="optradio" value="incorrect">New York City
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="optradio" class="optradio" value="incorrect">Chicago
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="optradio" class="optradio" value="incorrect">Hawkins
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="optradio" class="optradio" value="correct">Pittsburgh
+            </label>
+          </form>
+          <hr>
 
-      <p>8. The rural back road Eleven and the boys often use as an escape route is called _______?</p>
-      <form class="question">
-        <label class="radio-inline">
-          <input type="radio" name="optradio" class="optradio" value="incorrect">Westwood
-        </label>
-        <label class="radio-inline">
-          <input type="radio" name="optradio" class="optradio" value="incorrect">Backwood
-        </label>
-        <label class="radio-inline">
-          <input type="radio" name="optradio" class="optradio" value="correct">Mirkwood
-        </label>
-        <label class="radio-inline">
-          <input type="radio" name="optradio" class="optradio" value="incorrect">Darkwood
-        </label>
-      </form>
+          <p>8. What is the name of the rural back road the gang often uses as an escape route?</p>
+          <form class="question">
+            <label class="radio-inline">
+              <input type="radio" name="optradio" class="optradio" value="incorrect">Westwood
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="optradio" class="optradio" value="incorrect">Backwood
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="optradio" class="optradio" value="correct">Mirkwood
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="optradio" class="optradio" value="incorrect">Darkwood
+            </label>
+          </form>
+          <hr>
 
-      <p>9. What do Barb's parents serve for dinner when Nancy and Steve visit?</p>
-      <form class="question">
-        <label class="radio-inline">
-          <input type="radio" name="optradio" class="optradio" value="incorrect">Popeyes Chicken
-        </label>
-        <label class="radio-inline">
-          <input type="radio" name="optradio" class="optradio" value="correct">Kentucky Fried Chicken
-        </label>
-        <label class="radio-inline">
-          <input type="radio" name="optradio" class="optradio" value="incorrect">Church's Chicken
-        </label>
-        <label class="radio-inline">
-          <input type="radio" name="optradio" class="optradio" value="incorrect">Homemade Fried Chicken
-        </label>
-      </form>
+          <p>9. What do Barb's parents serve for dinner when Nancy and Steve visit?</p>
+          <form class="question">
+            <label class="radio-inline">
+              <input type="radio" name="optradio" class="optradio" value="incorrect">Popeyes
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="optradio" class="optradio" value="correct">Kentucky Fried Chicken
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="optradio" class="optradio" value="incorrect">Church's
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="optradio" class="optradio" value="incorrect">Homemade Fried Chicken
+            </label>
+          </form>
+          <hr>
 
-      <p>10. In what year does Season 2 take place?</p>
-      <form class="question">
-        <label class="radio-inline">
-          <input type="radio" name="optradio" class="optradio" value="incorrect">1982
-        </label>
-        <label class="radio-inline">
-          <input type="radio" name="optradio" class="optradio" value="incorrect">1983
-        </label>
-        <label class="radio-inline">
-          <input type="radio" name="optradio" class="optradio" value="correct">1984
-        </label>
-        <label class="radio-inline">
-          <input type="radio" name="optradio" class="optradio" value="incorrect">1985
-        </label>
-      </form>
+          <p>10. In what year does Season 2 take place?</p>
+          <form class="question">
+            <label class="radio-inline">
+              <input type="radio" name="optradio" class="optradio" value="incorrect">1982
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="optradio" class="optradio" value="incorrect">1983
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="optradio" class="optradio" value="correct">1984
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="optradio" class="optradio" value="incorrect">1985
+            </label>
+          </form>
+          <hr>
 
-      <p>11. Who does Dustin dance with at the Snow Ball?</p>
-      <form class="question">
-        <label class="radio-inline">
-          <input type="radio" name="optradio" class="optradio" value="incorrect">Lucas' Sister
-        </label>
-        <label class="radio-inline">
-          <input type="radio" name="optradio" class="optradio" value="correct">Nancy
-        </label>
-        <label class="radio-inline">
-          <input type="radio" name="optradio" class="optradio" value="incorrect">Eleven
-        </label>
-        <label class="radio-inline">
-          <input type="radio" name="optradio" class="optradio" value="incorrect">Max
-        </label>
-      </form>
-
+          <p>11. Who does Dustin dance with at the Snow Ball?</p>
+          <form class="question">
+            <label class="radio-inline">
+              <input type="radio" name="optradio" class="optradio" value="incorrect">Lucas' sister
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="optradio" class="optradio" value="correct">Nancy
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="optradio" class="optradio" value="incorrect">Eleven
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="optradio" class="optradio" value="incorrect">Max
+            </label>
+          </form>
+          <hr>
+        </div>
+        <div class="col-sm-1">
+        </div>
+      </div>
+      <div class="row submit">
+        <div class="col-sm-12">
+          <button type="button" class="btn btn-lg red-background" id="submit-button">SUBMIT ANSWERS</button><p></p>
+        </div>
+      </div>
+    
     </div>
+    <div class="row results"></div>
+
     <!-- 
     <div class="submit"> -->
-    <div class="row results">
-      <div class="col-lg-4 col-lg-offset-4">
-        <button type="button" class="btn btn-lg red-background" id="submit-button">submit answers</button>
-      </div>
-    </div>
-    <!-- end of question screen -->
+   </div>
+  <!-- end of question screen -->
 
-    <!-- beginning of results screen -->
-    <!-- <div class="results">
+  <!-- beginning of results screen -->
+  <!-- <div class="results">
       <div id="correct">Correct Answers: </div>
       <div id="incorrect">Incorrect Answers: </div>
       <div id="unanswered">Unanswered: </div>
     </div> -->
-    <!-- end of results screen -->
-    <div class="images row">
-      <div class="col-sm-4">
-        <img id="stranger-kids" src="assets/images/stranger-kids.jpg" class="img-fluid" alt="stranger-things-kids" />
-      </div>
-      <div class="col-sm-4">
-      </div>
-      <div class="col-sm-4">
-        <img id="stranger-pic" src="assets/images/demogorgon.jpg" class="img-fluid" alt="stranger pic" />
-      </div>
-
-    </div>
+  <!-- end of results screen -->
+  <div class="image">
+    <img id="stranger-kids" src="assets/images/stranger-footer.jpg" class="img-fluid" alt="stranger-things-footer" />
   </div>
 
   <!-- end of background div -->
-  </div>
+
 
 
 

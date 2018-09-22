@@ -4,7 +4,8 @@ body, html {
     color: rgb(204, 4, 4);
 }
 .bg {
-    background-color: black;
+    background-color: rgb(2, 1, 10);
+    background-image: url(/assets/images/stranger-bikes-background.jpg)
     background-size: 100%;
 }
 
@@ -14,9 +15,8 @@ body, html {
     font-size: 15px;
 }
 
-#start-button {
+#start-button, #submit-button {
     color: black;
-    font-weight: bold;
 }
 .start-screen, .results,
 .question-screen {
@@ -37,8 +37,22 @@ div {
     margin-right: 8px;
 }
 hr {
-    color: white;
     border-color: rgb(204, 4, 4);
     margin: 5px;
+}
+.optradio {
+    margin-right: 2px;
+    font-size: 12px;
+}
+img {
+    width: 100%;
+    z-index: -1;
+}
+.col-sm-10 {
+    text-align: left;
+}
+.results {
+    padding: 30px 0px 30px 0px;
+    font-size: 25px;
 }
 
